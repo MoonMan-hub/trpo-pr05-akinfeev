@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f4f6fb;
+    color: #1f2937;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background: #111827;
+    color: white;
+    padding: 20px 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.wrap {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 24px;
+}
+
+.hero,
+.box,
+.card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.hero {
+    padding: 28px;
+}
+
+.muted {
+    color: #6b7280;
+}
+
+.pill {
+    display: inline-block;
+    background: #e9efff;
+    color: #315efb;
+    border-radius: 999px;
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.grid .card {
+    margin-bottom: 0;
+}
+
+.card b {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.big {
+    font-size: 30px;
+    font-weight: bold;
+    color: #315efb;
+}
+
+.card h3 {
+    margin: 12px 0 6px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 4px 0;
+}
+
+.status {
+    display: inline-block;
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-size: 13px;
+}
+
+.status.ok {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.status.no {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.status.dear {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.filter-form {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+select {
+    padding: 9px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.btn {
+    background: #315efb;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.reset {
+    color: #6b7280;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 10px;
+    text-align: left;
+}
+
+.error {
+    background: #fee2e2;
+    border-color: #fca5a5;
+}
+
+.warning {
+    background: #fef3c7;
+    border-color: #fcd34d;
+}
+
+.error-text {
+    color: #b91c1c;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 760px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        padding: 16px 20px;
+    }
+}
